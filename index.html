@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="cargar()">
+
+	<div id="welcome">
+		<h1>Bienvenid@</h1>
+		<form>
+			<input
+    type="text"
+    id="minombre"
+    placeholder="¿Como te llamas?"
+    name="name-example"
+    required>
+  </form>
+   <button  onclick="habilitarReto()">Enviar</button>
+</div>
+
+<div id="challenge">
+
+<h1 id="nombre"></h1>
+
+<h1> Reto Musical</h1>
+<div id="bloqueo1">
+  <button onclick="genero()"bloqueo2()>genero musical</button>
+</div>
+ <div id ="seleccion1">
+
+<h2>¿En que género se caracteriza la guitarra eléctrica?</h2>
+
+<form>
+  <input type="radio" id="Balada" name="p1" value="balada">
+  <label for="Balada">Balada</label><br>
+  <input type="radio" id="Salsa" name="p1" value="salsa">
+  <label for="Salsa">Salsa</label><br>
+  <input type="radio" id="Rock" name="p1" value="rock">
+  <label for="Rock">Rock</label>
+
+</form>
+
+<h2>Durante la época colonial el piano fue parte importante de un género musical ¿cúal fue?</h2>
+
+<form>
+  <input type="radio" id="Jazz" name="p2" value="Jazz">
+  <label for="Jazz">Jazz</label><br>
+  <input type="radio" id="Música Clasica" name="p2" value="Música Clasica">
+  <label for="Música Clasica">Música Clasica</label><br>
+  <input type="radio" id="Disco" name="p2" value="Disco">
+  <label for="Disco">Disco</label>
+
+</form>
+
+<h2>¿Que género musical fue mas popular en los años 90?</h2>
+
+<form>
+  <input type="radio" id="Reggaeton" name="p3" value="Reggaeton">
+  <label for="Reggaeton">Reggaeton</label><br>
+  <input type="radio" id="Balada" name="p3" value="Balada">
+  <label for="Balada">Balada</label><br>
+  <input type="radio" id="Salsa" name="p3" value="Salsa">
+  <label for="Salsa">Salsa</label>
+
+</form>
+
+</div>
+
+<div id = bloqueo2>
+<button onclick="letras()"bloqueo1()>letras musicales</button>
+</div>
+<div id = "seleccion2">
+
+<h2>Completa la letra de la canción</h2>
+<h3>Usted se me llevo la vida y el alma entera y me ha dejado...</h3>
+
+<form>
+  <input type="radio" id="Con esta angustia y esta pena" name="p4" value="Con esta angustia y esta pena">
+  <label for="Con esta angustia y esta pena">Con esta angustia y esta pena</label><br>
+  <input type="radio" id="Con la desgracia y la desdicha" name="p4" value="Con la desgracia y la desdicha">
+  <label for="Con la desgracia y la desdicha">Con la desgracia y la desdicha</label><br>
+  <input type="radio" id="En un abismo profundo y sin pena" name="p4" value="En un abismo profundo y sin pena">
+  <label for="En un abismo profundo y sin pena">En un abismo profundo y sin pena</label>
+
+</form>
+
+<h2>¿A que artista pertenece esta canción?</h2>
+<h3>"Frío,frío como el agua del rio o caliente como agua de la fuente..."</h3>
+<form>
+  <input type="radio" id="Ricardo Arjona" name="p5" value="Ricardo Arjona">
+  <label for="Ricardo Arjona">Ricardo Arjona</label><br>
+  <input type="radio" id="Luis Fonsi" name="p5" value="Luis Fonsi">
+  <label for="Luis Fonsi">Luis Fonsi</label><br>
+  <input type="radio" id="Juan Luis Guerra" name="p5" value="Juan Luis Guerra ">
+  <label for="Juan Luis Guerra">Juan Luis Guerra</label>
+
+</form>
+
+<h2>¿con que canción relacionas al grupo musical Sin Bandera?</h2>
+
+<form>
+  <input type="radio" id="Te vi venir" name="p6" value="Te vi venir">
+  <label for="Te vi venir">Te vi venir</label><br>
+  <input type="radio" id="Tu me cambiaste la vida" name="p6" value="Tu me cambiaste la vida">
+  <label for="Tu me cambiaste la vida">Tu me cambiaste la vida</label><br>
+  <input type="radio" id="Mientes" name="p6" value="Mientes ">
+  <label for="Mientes">Mientes</label>
+
+</form>
+
+
+</div>
+
+     <script src="script.js"></script>
+  </body>
+
+</html>
