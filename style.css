@@ -31,7 +31,8 @@
  #enviar{
     height: 50px;
     width: 70px;
-    margin-top: 10px; 
+    margin-top: 10px;
+    margin-left: 120px; 
  }
   #nombre{
     color:brown;

@@ -11,7 +11,7 @@
 <body onload="cargar()">
 
   <div id="welcome">
-    <img id="musica" src="c-d-x-PDX_a_82obo-unsplash.jpg" alt="musica">
+    <img id="musica" src="./src/c-d-x-PDX_a_82obo-unsplash (2).jpg" alt="musica">
     <h1 id="titulo">Bienvenid@</h1>
     <form id="text">
 			<input
@@ -39,8 +39,8 @@
 <h2>¿En que género se caracteriza la guitarra eléctrica?</h2>
 
 <form>
-  <input type="radio" id="Balada" name="p1" value="balada">
-  <label for="Balada">Balada</label><br>
+  <input type="radio" id="Baladas" name="p1" value="Baladas">
+  <label for="Baladas">Balada</label><br>
   <input type="radio" id="Salsa" name="p1" value="salsa">
   <label for="Salsa">Salsa</label><br>
   <input type="radio" id="Rock" name="p1" value="rock">
@@ -53,7 +53,7 @@
 <form>
   <input type="radio" id="Jazz" name="p2" value="Jazz">
   <label for="Jazz">Jazz</label><br>
-  <input type="radio" id="Música Clasica" name="p2" value="Música Clasica">
+  <input type="radio" id="MusicaClasica" name="p2" value="Música Clasica">
   <label for="Música Clasica">Música Clasica</label><br>
   <input type="radio" id="Disco" name="p2" value="Disco">
   <label for="Disco">Disco</label>
@@ -70,7 +70,7 @@
   <input type="radio" id="Salsa" name="p3" value="Salsa">
   <label for="Salsa">Salsa</label>
 <br><button type="button" onclick="devolverGeneroMusical()">devolver</button></br>
-<button type="button" onclick="">resultados</button>
+<button type="button" onclick="resultadosGenerosMusicales()">resultados</button>
 </form>
 
 </div>
@@ -119,6 +119,15 @@
 </form>
 
 
+</div>
+<div id="resultado">
+ 
+  <form action="">
+    <h1>Resultados</h1>
+    <h4 id="mensaje">la cantidad de aciertos </h4>
+    <br><button type="submit">Salir</button></br>
+    <button type="button" onclick="volverAjugar()">volver a jugar</button>
+  </form>
 </div>
 
      <script src="script.js"></script>

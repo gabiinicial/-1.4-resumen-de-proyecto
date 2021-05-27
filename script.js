@@ -2,6 +2,7 @@ function cargar() {
     document.getElementById("challenge").style.display = "none";
     document.getElementById("seleccion1").style.display = "none";
     document.getElementById("seleccion2").style.display = "none";
+    document.getElementById("resultado").style.display = "none";
   }
   function genero(){
     document.getElementById("seleccion1").style.display = "initial";
@@ -50,3 +51,32 @@ function devolverLetrasMusicales(){
   
   
   }
+
+  function resultadosGenerosMusicales(){
+    
+    let contador = 0;
+    document.getElementById("resultado").style.display = "initial";
+    bloqueo1();
+
+    if (document.getElementById("Rock").checked == true){
+        contador = contador + 1;
+    }
+    if (document.getElementById("MusicaClasica").checked == true){
+        contador = contador + 1;
+    }
+    if (document.getElementById("Balada").checked == true){
+        contador = contador + 1;
+    }
+    document.getElementById("seleccion1").style.display = "none";
+    document.getElementById("seleccion2").style.display = "none";
+    document.getElementById("mensaje").innerHTML = document.getElementById("mensaje").innerHTML+ " Genero Musical es: "+contador+"/3"
+    
+
+  }
+  
+  function volverAjugar(){
+    document.getElementById("resultado").style.display = "none";
+    desbloquearBloqueo1();
+    desbloquearBloqueo2();
+  }
+  
